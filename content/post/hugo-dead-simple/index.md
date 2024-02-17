@@ -141,7 +141,7 @@ notitle: true # hide title
 
 ## Post features
 
-{{< box important >}}
+{{< box info >}}
 **Hugo shortcodes**
 
 In all examples you’ll need to adjust code so the `%` or `<` are touching the `{` like this: `{%`.

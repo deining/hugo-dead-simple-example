@@ -436,11 +436,11 @@ with Blog("fmri.svg", figsize=(7, 7), axis=True):
                  data=fmri)
 ```
 
-![fmri](/img/post-matplotlib-charts/fmri.svg)
+![fmri](./fmri.svg)
 
 Looks good in light and dark mode!
 
-![subplots](/img/post-matplotlib-charts/subplots.svg)
+![subplots](./subplots.svg)
 
 ### Image galleries
 

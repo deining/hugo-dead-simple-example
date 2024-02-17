@@ -15,7 +15,7 @@ Simple hugo theme to be dead easy on the reader.
 - Initialize go module
 
   ```bash
-  hugo mod init
+  hugo mod init <module_path>
   ```
 
 - Add theme to your `config.yml`

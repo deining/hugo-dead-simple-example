@@ -1,0 +1,46 @@
+baseURL: "https://hugo-dead-simple.netlify.com/"
+languageCode: en-us
+title: "Hugo dead simple example"
+enableGitInfo: true
+menu:
+  main:
+    - name: "<u>H</u>ome"
+      url: /
+      weight: 1
+    # - name: "Categories"
+    #   url: "categories/"
+    #   weight: 2
+    - name: "<u>T</u>ags"
+      url: "https://hugo-dead-simple.netlify.com/tags"
+      weight: 3
+    - name: "Bookmarks"
+      url: "https://hugo-dead-simple.netlify.com/bookmarks"
+      weight: 4
+    - name: "Contact"
+      url: "https://hugo-dead-simple.netlify.com/contact"
+      weight: 5
+
+params:
+  description: "Hugo dead simple example"
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  page:
+    - html
+
+module:
+  imports:
+    - path: github.com/barklan/hugo-dead-simple

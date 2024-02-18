@@ -36,64 +36,7 @@ Simple hugo theme to be dead easy on the reader.
 
 ### Site parameters
 
-This site has the following `config.yml`
-
-```yaml {linenos=inline}
-baseURL: "https://rxsamira.netlify.app/"
-languageCode: en-us
-title: "Samira's place"
-enableGitInfo: true
-menu:
-  main:
-    - name: "<u>H</u>ome"
-      url: /
-      weight: 1
-    # - name: "Categories"
-    #   url: "categories/"
-    #   weight: 2
-    - name: "<u>T</u>ags"
-      url: "tags/"
-      weight: 3
-    - name: "Bookmarks"
-      url: /bookmarks
-      weight: 4
-    - name: "Contact"
-      url: /contact
-      weight: 5
-
-security:
-  funcs:
-    getenv:
-      - ^HUGO_
-      - ^CI$
-      - ^LAST_COMMIT_DATE$
-
-params:
-  description: "Samira's place"
-  roseIcon: true
-
-markup:
-  highlight:
-    codeFences: true
-    style: bw
-    lineNumbersInTable: false
-    noClasses: false
-  goldmark:
-    renderer:
-      unsafe: true
-
-outputs:
-  home:
-    - html
-    - rss
-    - json
-  page:
-    - html
-
-module:
-  imports:
-    - path: github.com/barklan/hugo-dead-simple
-```
+This site's config can be found [here](https://github.com/barklan/hugo-dead-simple-example/blob/main/config.yaml).
 
 ### Section parameters
 

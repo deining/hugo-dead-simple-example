@@ -147,18 +147,6 @@ notitle: true # hide title
 In all examples you’ll need to adjust code so the `%` or `<` are touching the `{` like this: `{%`.
 {{< /box >}}
 
-- Light and dark themes
-- Everything is lazy loaded
-- Site-wide search
-- Keyboard-friendly: `h` to home, `t` to tags, `i` to search, `Tab` to navigate posts and search
-- Copy buttons on code blocks
-- Dynamic wiki-style table of contents
-- Katex math (inline and block)
-- Info boxes
-- Attachments
-- Columns
-- Tabs
-
 ### Footnotes
 
 ```txt

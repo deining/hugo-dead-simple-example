@@ -425,6 +425,8 @@ If you want three images in a row additionally add `three-image-gallery` class t
 {{ < youtube w7Ft2ymGmfc >}}
 ```
 
+{{< youtube w7Ft2ymGmfc >}}
+
 ### Attachments
 
 ```txt

@@ -422,10 +422,10 @@ If you want three images in a row additionally add `three-image-gallery` class t
 ### YouTube
 
 ```txt
-{{ < youtube w7Ft2ymGmfc >}}
+{{ < youtube x6Ssz1WiKN8 >}}
 ```
 
-{{< youtube w7Ft2ymGmfc >}}
+{{< youtube x6Ssz1WiKN8 >}}
 
 ### Attachments
 

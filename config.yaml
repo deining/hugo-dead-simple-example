@@ -13,6 +13,7 @@ menu:
 
 params:
   description: "Hugo dead simple example"
+  noSearch: false
 
 markup:
   highlight:

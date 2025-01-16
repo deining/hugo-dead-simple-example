@@ -291,7 +291,7 @@ Internally it uses `imgp` class. You can customize images like this:
 #### Figure element
 
 ```txt
-{{ < figure src="./pinkrose.avif" title=">An elephant at sunset" >}}
+{{ < figure src="./pinkrose.avif" title="An elephant at sunset" >}}
 ```
 
 As with images, you can customize figure:
@@ -475,11 +475,11 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 
 {{% columns %}}
 
-{{< figure src="./pinkrose.avif" title=">An elephant at sunset" >}}
+{{< figure src="./pinkrose.avif" title="An elephant at sunset" >}}
 
 <--->
 
-{{< figure src="./pinkrose.avif" title=">An elephant at sunset" >}}
+{{< figure src="./pinkrose.avif" title="An elephant at sunset" >}}
 
 {{% /columns %}}
 

@@ -113,11 +113,11 @@ Here's a sentence with a footnote.[^1]
 ### Boxes
 
 ```
-{{ < box info >}}
+{{</*  box info  */>}}
 **This is a bold line**
 
 Hello there, and have a nice day
-{{ < /box >}}
+{{</*  /box  */>}}
 ```
 
 `info`, `tip`, `warning`, `important`
@@ -291,7 +291,7 @@ Internally it uses `imgp` class. You can customize images like this:
 #### Figure element
 
 ```txt
-{{ < figure src="./pinkrose.avif" title="An elephant at sunset" >}}
+{{</*  figure src="./pinkrose.avif" title="An elephant at sunset"  */>}}
 ```
 
 As with images, you can customize figure:
@@ -406,7 +406,7 @@ If you want three images in a row additionally add `three-image-gallery` class t
 #### Two images
 
 ```txt
-{{ < twoimg "./pinkrose.avif" "./flower.avif" >}}
+{{</*  twoimg "./pinkrose.avif" "./flower.avif"  */>}}
 ```
 
 {{< twoimg "./pinkrose.avif" "./flower.avif" >}}
@@ -414,7 +414,7 @@ If you want three images in a row additionally add `three-image-gallery` class t
 #### Three images
 
 ```txt
-{{ < threeimg "./pinkrose.avif" "./flower.avif" "./pinkrose.avif" >}}
+{{</*  threeimg "./pinkrose.avif" "./flower.avif" "./pinkrose.avif"  */>}}
 ```
 
 {{< threeimg "./pinkrose.avif" "./flower.avif" "./pinkrose.avif" >}}
@@ -422,7 +422,7 @@ If you want three images in a row additionally add `three-image-gallery` class t
 ### YouTube
 
 ```txt
-{{ < youtube x6Ssz1WiKN8 >}}
+{{</*  youtube x6Ssz1WiKN8  */>}}
 ```
 
 {{< youtube x6Ssz1WiKN8 >}}
@@ -430,7 +430,7 @@ If you want three images in a row additionally add `three-image-gallery` class t
 ### Attachments
 
 ```txt
-{{ < attachments folder="temp" title="Boom" caption="example" >}}
+{{</*  attachments folder="temp" title="Boom" caption="example"  */>}}
 ```
 
 `title` and `caption` can be omitted.
@@ -488,29 +488,29 @@ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
 ### Tabs
 
 ```txt
-{{ < tabs >}}
-{{ < tab "MacOS" >}}
+{{</*  tabs  */>}}
+{{</*  tab "MacOS"  */>}}
 
 This is tab **MacOS** content.
 
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter!
-{{ < /tab >}}
+{{</*  /tab  */>}}
 
-{{ < tab "Linux" >}}
+{{</*  tab "Linux"  */>}}
 
 This is tab **Linux** content.
 
-{{ < /tab >}}
+{{</*  /tab  */>}}
 
-{{ < tab "Windows" >}}
+{{</*  tab "Windows"  */>}}
 
 This is tab **Windows** content.
 
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter!
-{{ < /tab >}}
-{{ < /tabs >}}
+{{</*  /tab  */>}}
+{{</*  /tabs  */>}}
 ```
 
 {{< tabs >}}

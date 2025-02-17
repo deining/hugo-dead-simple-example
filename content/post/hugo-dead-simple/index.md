@@ -4,7 +4,6 @@ date: "2020-04-01"
 tags:
   - hugo
 toc: true
-math: true
 bold: true
 ---
 
@@ -36,7 +35,7 @@ Simple hugo theme to be dead easy on the reader.
 
 ### Site parameters
 
-This site's config can be found [here](https://github.com/barklan/hugo-dead-simple-example/blob/main/config.yaml).
+This site's config can be found [here](https://github.com/barklan/hugo-dead-simple-example/blob/main/hugo.yaml).
 
 ### Section parameters
 
@@ -57,7 +56,6 @@ subtitle: "...example subtitle"
 date: "2023-08-11"
 toc: true # table of contents (only h2 and h3 added to toc)
 bold: true # display post title in bold in posts list
-math: true # load katex
 categories:
   - ...
 tags:
@@ -79,7 +77,7 @@ notitle: true # hide title
   command = "hugo --gc --minify"
 
   [context.production]
-  environment = { HUGO_VERSION = "0.114.1" }
+  environment = { HUGO_VERSION = "0.144.0" }
   ```
 
 ## Post features
@@ -211,24 +209,24 @@ num, err := rand.Int(rand.Reader, big.NewInt(int64(len(letters))))
 
 Available classes: `fs95`, `fs90`, `fs85`, `fs80`, `fs75`, `fs70` and `fs50`.
 
-### Katex
+### KaTeX
 
 #### Inline
 
 ```txt
-\\(\pi = 3.14\\)
+\(\pi = 3.14\)
 ```
 
-\\(\pi = 3.14\\)
+\(\pi = 3.14\)
 
 #### Block
 
 ```txt
 $$
 \begin{align}
-\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\\
- & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\\
- & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\\
+\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\
+ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\
  & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
 \end{align}
 $$
@@ -236,15 +234,27 @@ $$
 
 $$
 \begin{align}
-\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\\
- & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\\
- & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\\
+\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\
+ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\
  & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
 \end{align}
 $$
 
-Note that using Hugo you need `\\\` to break the line instead of usual `\\`.
-If you don't want automatic numbering you can use `\begin{align*}`.
+Note that if you don't want automatic numbering you can use `\begin{align*}`.
+
+#### Chemistry
+
+````txt
+\[
+\tag*{(2)} \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
+\]
+````
+
+\[
+\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteric hydroxide}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{tetrahydroxozincate}}{\ce{[Zn(OH)4]^2-}}$}
+\]
+
 
 Use [supported functions](https://katex.org/docs/supported.html) and [support table](https://katex.org/docs/support_table.html) for reference.
 
@@ -542,4 +552,3 @@ stringit, frustra Saturnius uteroque inter!
 - Update Iosevka font
 - Update Inter font
 - Update jquery in footer
-- Update Katex

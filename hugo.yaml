@@ -22,6 +22,18 @@ markup:
     lineNumbersInTable: false
     noClasses: false
   goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
     renderer:
       unsafe: true
 
@@ -34,5 +46,6 @@ outputs:
     - html
 
 module:
+  workspace: dead-simple.work
   imports:
     - path: github.com/barklan/hugo-dead-simple

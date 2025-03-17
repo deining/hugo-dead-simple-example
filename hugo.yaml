@@ -46,6 +46,5 @@ outputs:
     - html
 
 module:
-  workspace: dead-simple.work
   imports:
     - path: github.com/barklan/hugo-dead-simple

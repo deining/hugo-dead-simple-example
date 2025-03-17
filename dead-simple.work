@@ -1,5 +1,0 @@
-go 1.23
-
-use .
-use ../hugo-dead-simple/   // Local theme clone resides in sibling folder to this project
-// use ./themes/hugo-dead-simple/  

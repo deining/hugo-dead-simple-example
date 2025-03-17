@@ -549,8 +549,3 @@ stringit, frustra Saturnius uteroque inter!
 {{< /tab >}}
 {{< /tabs >}}
 
-## Dev update notes
-
-- Update Iosevka font
-- Update Inter font
-- Update jquery in footer

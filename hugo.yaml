@@ -1,4 +1,4 @@
-baseURL: "https://hugo-dead-simple.netlify.com/"
+baseURL: "https://hugo-dead-simple.netlify.app/"
 languageCode: en-us
 title: "Hugo dead simple example"
 enableGitInfo: true
@@ -8,7 +8,7 @@ menu:
       url: /
       weight: 1
     - name: "<u>T</u>ags"
-      url: "https://hugo-dead-simple.netlify.com/tags"
+      url: "https://hugo-dead-simple.netlify.app/tags"
       weight: 3
 
 params:

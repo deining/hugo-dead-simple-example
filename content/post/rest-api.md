@@ -55,8 +55,8 @@ Common property names should be used where applicable:
 | endTime         | Timestamp | The timestamp marking the end of some time period or operation (regardless of its success).                                                                                           |
 | readTime        | Timestamp | The timestamp at which a particular an entity should be read (if used in a request) or was read (if used in a response).                                                              |
 | timeZone        | string    | The time zone name. It should be an IANA TZ name, such as "America/Los_Angeles". For more information, see [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
-| regionCode      | string    | The Unicode country/region code (CLDR) of a location, such as "US" and "419". For more information, see [unicode.org](http://www.unicode.org/reports/tr35/#unicode_region_subtag).    |
-| languageCode    | string    | The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see [unicode.org](http://www.unicode.org/reports/tr35/#Unicode_locale_identifier).                      |
+| regionCode      | string    | The Unicode country/region code (CLDR) of a location, such as "US" and "419". For more information, see [unicode.org](https://www.unicode.org/reports/tr35/#unicode_region_subtag).    |
+| languageCode    | string    | The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see [unicode.org](https://www.unicode.org/reports/tr35/#Unicode_locale_identifier).                      |
 | mimeType        | string    | An IANA published MIME type (also referred to as media type). For more information, see [iana.org](https://www.iana.org/assignments/media-types/media-types.xhtml).                   |
 | displayName     | string    | The display name of an entity.                                                                                                                                                        |
 | title           | string    | The official name of an entity, such as company name. It should be treated as the formal version of display_name.                                                                     |
@@ -247,7 +247,7 @@ Clients MAY use `$top` and `$skip` query parameters to specify a number of resul
 When both `$top` and `$skip` are given by a client, the server SHOULD first apply `$skip` and then `$top` on the collection.
 
 ```http
-GET http://api.contoso.com/v1.0/people?$top=5&$skip=2
+GET https://api.contoso.com/v1.0/people?$top=5&$skip=2
 ```
 
 _For server-driven paging, [Google's guide](https://cloud.google.com/apis/design/design_patterns) is useful._

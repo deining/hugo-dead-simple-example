@@ -17,7 +17,7 @@ Simple hugo theme to be dead easy on the reader.
   hugo mod init <module_path>
   ```
 
-- Add theme to your `config.yml`
+- Add theme to your `hugo.yaml`
 
   ```yml
   module:
@@ -76,9 +76,9 @@ notitle: true # hide title
   publish = "public"
   command = "hugo --gc --minify"
 
-  [context.production]
-  environment = { HUGO_VERSION = "0.144.0" }
-  ```
+  [build.environment]
+  HUGO_VERSION = "0.147.6"
+   ```
 
 ## Post features
 
